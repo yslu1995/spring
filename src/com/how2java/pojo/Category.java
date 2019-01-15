@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * Description 类别
  */
 
-@Component("c")
+@Component
 public class Category {
     private int id;
     private String name = "lys";
