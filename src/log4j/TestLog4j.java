@@ -1,7 +1,6 @@
 package log4j;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 
 public class TestLog4j {
     static Logger logger = Logger.getLogger(TestLog4j.class);
@@ -25,17 +24,23 @@ public class TestLog4j {
 //        logger.error("错误信息");
 //        logger.fatal("致命信息");
         //E:\workspace\spring\src
-        PropertyConfigurator.configure("e:\\workspace\\spring\\src\\log4j.properties");
-        for (int i = 0; i < 10; i++) {
-            logger.trace("跟踪信息");
-            logger.debug("调试信息");
-            logger.info("输出信息");
-            logger.warn("警告信息");
-            logger.error("错误信息");
-            logger.fatal("致命信息");
+//        PropertyConfigurator.configure("e:\\workspace\\spring\\src\\log4j.properties");
+//        for (int i = 0; i < 10; i++) {
+//            logger.trace("跟踪信息");
+//            logger.debug("调试信息");
+//            logger.info("输出信息");
+//            logger.warn("警告信息");
+//            logger.error("错误信息");
+//            logger.fatal("致命信息");
+//
+//        }
+        System.out.println("a的阶乘是：");
+        int a = 4;
+        while (a != 2) {
+            a = a * (a - 1);
 
         }
-
+        System.out.println("a的阶乘是：" + a);
 
     }
 }

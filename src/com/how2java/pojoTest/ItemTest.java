@@ -1,7 +1,7 @@
 package com.how2java.pojoTest;
 
 //适应于高并发的json封装
-import com.alibaba.fastjson.JSON;
+//import com.alibaba.fastjson.JSON;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -20,17 +20,17 @@ public class ItemTest {
         Item blood = new Item();
         blood.setName("血瓶");
         blood.setPrice(50);
-        System.out.println(JSON.toJSONString(blood));
+//        System.out.println(JSON.toJSONString(blood));
 
         Item caoxie = new Item();
         caoxie.setName("草鞋");
         caoxie.setPrice(300);
-        System.out.println(JSON.toJSONString(caoxie));
+//        System.out.println(JSON.toJSONString(caoxie));
 
         Item changjian = new Item();
         changjian.setName("长剑");
         changjian.setPrice(350);
-        System.out.println(JSON.toJSONString(changjian));
+//        System.out.println(JSON.toJSONString(changjian));
         System.out.println("succeed");
 
     }

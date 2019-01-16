@@ -37,6 +37,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
+import java.util.Scanner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:applicationContext.xml")
@@ -47,5 +48,12 @@ public class TestSpring {
     @Test
     public void test() {
         System.out.println(c.getName());
+        Scanner s = new Scanner(System.in);
+        int a = s.nextInt();
+        System.out.println("第一个整数：" + a);
+        int b = s.nextInt();
+        System.out.println("第二个整数：" + b);
     }
+
+
 }
