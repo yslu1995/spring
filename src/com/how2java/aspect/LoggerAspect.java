@@ -9,7 +9,9 @@ import org.springframework.stereotype.Component;
  * 辅助日志功能业务
  */
 
+//使用aop
 @Aspect
+//DI注解注入 spring
 @Component
 public class LoggerAspect {
 

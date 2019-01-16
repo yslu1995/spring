@@ -1,5 +1,6 @@
 package com.how2java.pojoTest;
 
+//适应于高并发的json封装
 import com.alibaba.fastjson.JSON;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -44,6 +45,5 @@ public class ItemTest {
         hero.recovery(35.0f);
 
         System.out.println(hero.getHp());
-//        System.out.println(JSON.toJSONString());
     }
 }
