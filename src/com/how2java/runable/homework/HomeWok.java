@@ -12,7 +12,5 @@ public class HomeWok {
         Hero hero = new Hero();
         HeroThread fajineng = new HeroThread(hero);
         fajineng.start();
-
     }
-
 }

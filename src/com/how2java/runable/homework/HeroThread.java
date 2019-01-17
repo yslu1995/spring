@@ -15,12 +15,26 @@ public class HeroThread extends Thread {
     }
 
     public void run() {
-        try {
-            Thread.sleep(5000);
-            hero.sendADuoGei();
-        }catch (Exception e){
-            e.printStackTrace();
+        int seconds = 3;
+        while (true) {
+            try {
+                if (seconds > 0) {
+                    System.out.print("第" + (4 - seconds) + "拳" + ":");
+                    hero.sendADuoGei();
+                    seconds--;
+                    try {
+                        Thread.sleep(1000);
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }
+                } else {
+                    System.out.println("cd中......");
+                    Thread.sleep(5000);
+                    seconds = 3;
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
-
 }
