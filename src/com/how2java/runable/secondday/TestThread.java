@@ -29,14 +29,14 @@ public class TestThread {
 
         Thread[] addThreads = new Thread[n];
         Thread[] reduceThreads = new Thread[n];
-        final Object someObject = new Object();
+//        final Object someObject = new Object();
         for (int i = 0; i < n; i++) {
             Thread t = new Thread() {
                 public void run() {
                     //任何线程要修改hp的值，必须先占用someObject
-                    synchronized (gareen) {
+//                    synchronized (gareen) {
                         gareen.recover();
-                    }
+//                    }
                     try {
                         Thread.sleep(100);
                     } catch (InterruptedException e) {
@@ -54,9 +54,9 @@ public class TestThread {
         for (int i = 0; i < n; i++) {
             Thread t = new Thread() {
                 public void run() {
-                    synchronized (gareen) {
+//                    synchronized (gareen) {
                         gareen.hurt();
-                    }
+//                    }
                     try {
                         Thread.sleep(100);
                     } catch (InterruptedException e) {

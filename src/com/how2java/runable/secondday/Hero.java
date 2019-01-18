@@ -11,12 +11,12 @@ public class Hero {
     public int damage;
 
     //回血
-    public void recover() {
+    public synchronized void recover() {
         hp = hp + 1;
     }
 
     //掉血
-    public void hurt() {
+    public synchronized void hurt() {
         hp = hp - 1;
     }
 

@@ -2,3 +2,5 @@
 synchronized (gareen) {
  gareen.recover();
 }
+
+#进一步而言，把方法加同步锁，表示当前对象在多线程使用中是线程安全的！（也就是说公用的就是当前的class对象）
