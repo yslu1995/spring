@@ -1,6 +1,6 @@
-package com.how2java.runable.task;
+package com.how2java.runable.firstday.task;
 
-import com.how2java.runable.Hero;
+import com.how2java.runable.firstday.Hero;
 
 /**
  * @Description: 多线程--实现Runnable接口

@@ -1,5 +1,8 @@
-package com.how2java.runable.homework;
+package com.how2java.runable.firstday.homework;
 
+import com.how2java.runable.firstday.Hero;
+
+import java.util.ArrayList;
 import java.util.Random;
 
 /**
@@ -23,5 +26,18 @@ public class ProtectSereet {
         }
         System.out.println("本次生成的密码是：[" + d + "]");
         System.out.println("—————————开始线程———————————————");
+        Hero hero = new Hero();
+        hero.setSerectList(new ArrayList<String>());
+        //t1 破解线程，使用穷举法，匹配这个密码
+        BreakThread t1 = new BreakThread(hero, d.toString());
+
+        //日志线程，打印都用过哪些字符串去匹配，这个日志线程设计为守护线程
+        SecretThread t2 = new SecretThread(hero);
+
+        //设置t2为守护线程,启动线程
+        t2.setDaemon(true);
+        t1.start();
+        t2.start();
+
     }
 }

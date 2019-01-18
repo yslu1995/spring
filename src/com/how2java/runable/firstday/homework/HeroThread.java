@@ -1,6 +1,6 @@
-package com.how2java.runable.homework;
+package com.how2java.runable.firstday.homework;
 
-import com.how2java.runable.Hero;
+import com.how2java.runable.firstday.Hero;
 
 /**
  * @Description:

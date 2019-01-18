@@ -1,5 +1,7 @@
-package com.how2java.runable;
+package com.how2java.runable.firstday;
 
+
+import java.util.List;
 
 /**
  * @Description:
@@ -13,6 +15,40 @@ public class Hero {
     public float hp;
 
     public int damage;
+
+    public List<String> serectList;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public float getHp() {
+        return hp;
+    }
+
+    public void setHp(float hp) {
+        this.hp = hp;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
+
+    public void setDamage(int damage) {
+        this.damage = damage;
+    }
+
+    public List<String> getSerectList() {
+        return serectList;
+    }
+
+    public void setSerectList(List<String> serectList) {
+        this.serectList = serectList;
+    }
 
     public void attackHero(Hero h) {
         //把暂停时间去掉，多条线程各自会尽力去占有CPU资源

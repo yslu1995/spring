@@ -1,0 +1,4 @@
+#共用对象 gareen 表示不同线程的相同变量值 这里的gareen是引用对象 只是一个地址，hero里的属性其实是可以变的
+synchronized (gareen) {
+ gareen.recover();
+}

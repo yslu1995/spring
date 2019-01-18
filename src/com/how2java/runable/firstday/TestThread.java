@@ -1,6 +1,6 @@
-package com.how2java.runable;
+package com.how2java.runable.firstday;
 
-import com.how2java.runable.task.KillThread;
+import com.how2java.runable.firstday.task.KillThread;
 
 /**
  * @Description:

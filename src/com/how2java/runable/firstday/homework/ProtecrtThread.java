@@ -1,7 +1,7 @@
-package com.how2java.runable.homework;
+package com.how2java.runable.firstday.homework;
 
-import com.how2java.runable.Hero;
-import com.how2java.runable.task.KillThread;
+import com.how2java.runable.firstday.Hero;
+import com.how2java.runable.firstday.task.KillThread;
 
 /**
  * Created by LuYaoSheng
