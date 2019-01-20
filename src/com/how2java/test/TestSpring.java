@@ -37,10 +37,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:applicationContext.xml")
@@ -106,5 +104,16 @@ public class TestSpring {
         d.delete(0,1);
         System.out.println("--------------list");
         System.out.println(d.toString());
+    }
+
+    @Test
+    public void test5(){
+        long a = 502625466264L;
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+        Date date = new Date(a);
+        String dateString =  sdf.format(date);
+        System.out.println("----------------------");
+        System.out.println(dateString);
     }
 }
