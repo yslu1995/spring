@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Description:
+ * @Description:j
  * @Author: LYS
  * @Date: 2019/1/18 8:16
  */
@@ -57,3 +57,4 @@ public class BreakThread extends Thread {
         }
     }
 }
+
