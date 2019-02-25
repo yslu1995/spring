@@ -5,6 +5,7 @@ package com.how2java.BaseKnowledge.zhuangxiang.train;
  * Created time 2019/02/19 22:13
  * Description
  */
+//自动装箱，自动拆箱
 public class mahin {
     public static void main(String[] args) {
 
