@@ -43,12 +43,12 @@ public class train4 {
 //        }
 //        String result = new String(cs);
 //        System.out.println(result);
-        String str1 = "the light";
-
-        String start = "the";
-        String end = "Ight";
-
-        System.out.println(str1.startsWith(start));//以...开始
-        System.out.println(str1.endsWith(end));//以...结束
+//        String str1 = "the light";
+//
+//        String start = "the";
+//        String end = "Ight";
+//
+//        System.out.println(str1.startsWith(start));//以...开始
+//        System.out.println(str1.endsWith(end));//以...结束
     }
 }
