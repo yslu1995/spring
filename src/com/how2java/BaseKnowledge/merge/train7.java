@@ -9,9 +9,9 @@ import java.util.Calendar;
  */
 public class train7 {
     public static void main(String[] args) {
-//        练习：
-//        String与StringBuffer的性能区别?
-//        生成10位长度的随机字符串
+//      练习：
+//      String与StringBuffer的性能区别?
+//      生成10位长度的随机字符串
 //          然后,先使用String的+,连接10000个随机字符串,计算消耗的时间
 //          然后,再使用StringBuffer连接10000个随机字符串,计算消耗的时间
         String[] strList = new String[1000];
