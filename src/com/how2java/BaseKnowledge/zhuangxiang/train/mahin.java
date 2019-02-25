@@ -1,4 +1,4 @@
-package com.how2java.zhuangxiang.train;
+package com.how2java.BaseKnowledge.zhuangxiang.train;
 
 /**
  * Created by LuYaoSheng
