@@ -13,7 +13,7 @@ public class test {
     public static void main(String[] args) {
         try {
             //准备文件lol.txt其中的内容是AB，对应的ASCII分别是65 66
-            File f = new File("d:/jj/kk/55/aaa.txt");
+            File f = new File("d:/jj/kk/55/adda.txt");
             if (!f.exists()) {
                 //如果只写f.mkdirs() 就会把aaa.txt当做文件夹创建
                 f.getParentFile().mkdirs();
