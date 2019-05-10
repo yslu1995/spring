@@ -11,6 +11,7 @@ public class TestThread {
         final String kai = "凱";
         final String luban = "鲁班";
         Thread t1 = new Thread() {
+            @Override
             public void run() {
                 synchronized (dianwei) {
                     System.out.println("t1 已占有 典韦");
@@ -29,6 +30,7 @@ public class TestThread {
             }
         };
         Thread t2 = new Thread() {
+            @Override
             public void run() {
                 synchronized (kai) {
                     System.out.println("t2 已占有 凱");
@@ -47,6 +49,7 @@ public class TestThread {
             }
         };
         Thread t3 = new Thread() {
+            @Override
             public void run() {
                 synchronized (luban) {
                     System.out.println("t3 已占有 鲁班");

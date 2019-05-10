@@ -14,6 +14,7 @@ public class HeroThread extends Thread {
         this.hero = hero;
     }
 
+    @Override
     public void run() {
         int seconds = 3;
         while (true) {

@@ -35,7 +35,7 @@ public class ProtecrtThread {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    System.out.printf("已经玩了LOL %d 秒%n", seconds++);
+                    System.out.printf("已经玩了LOL %d 秒%n 整合合并", seconds++);
 
                 }
             }
