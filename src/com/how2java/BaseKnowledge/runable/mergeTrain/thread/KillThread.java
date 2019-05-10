@@ -14,12 +14,10 @@ public class KillThread extends Thread{
         this.h1 = h1;
         this.h2 = h2;
     }
-
     @Override
     public void run(){
         while(!h2.isDead()){
             h1.attackHero(h2);
         }
     }
-
 }
