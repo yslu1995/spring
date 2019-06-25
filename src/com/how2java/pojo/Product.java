@@ -2,21 +2,17 @@ package com.how2java.pojo;
 
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
-
 /**
  * Created by LuYaoSheng
  * Created time 2019/01/15 20:57
  * Description 练习对象
  */
-@Component("p")
+@Component
 public class Product {
     private Integer number;
 
     private int id;
     private String name="product1";
-
-    @Resource
     private Category category;
 
     public int getId() {

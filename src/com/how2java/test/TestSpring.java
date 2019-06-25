@@ -30,7 +30,11 @@
 
 package com.how2java.test;
 
+import com.alibaba.fastjson.JSON;
 import com.how2java.pojo.Category;
+import com.how2java.pojo.Product;
+import com.how2java.service.ProductService;
+import com.how2java.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -38,22 +42,52 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Random;
 
+/**
+ * 注解方式测试！！
+ */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:applicationContext.xml")
 public class TestSpring {
     @Resource
-    Category c;
+    private Category c;
+    @Resource
+    private Product product;
 
+    @Resource
+    private ProductService productService;
+
+    @Resource
+    private UserService userService;
     @Test
     public void test() {
-        System.out.println(c.getName());
-        Scanner s = new Scanner(System.in);
-        int a = s.nextInt();
-        System.out.println("第一个整数：" + a);
-        int b = s.nextInt();
-        System.out.println("第二个整数：" + b);
+        System.out.println("正在输出："+ JSON.toJSONString(c));
+        System.out.println("正在输出："+ JSON.toJSONString(product));
+        System.out.println("正在输出："+product.getName());
+        System.out.println("正在输出："+product.getId());
+        System.out.println("正在输出："+product.getId());
+
+
+
+//        Scanner s = new Scanner(System.in);
+//        int a = s.nextInt();
+//        System.out.println("第一个整数：" + a);
+//        int b = s.nextInt();
+//        System.out.println("第二个整数：" + b);
+    }
+
+    /**
+     * aop单元测试
+     */
+    @Test
+    public void aopTest(){
+        productService.doSomeService();
+        productService.doSomethingBad();
+        userService.doPerson();
     }
 
     @Test

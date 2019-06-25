@@ -16,25 +16,29 @@
 
 
     <!--<context:component-scan base-package="com.how2java.aspect"/>-->
+    <!--扫描注入bean的包路径-->
     <context:component-scan base-package="com.how2java"/>
     <aop:aspectj-autoproxy/>
 
-    <!--引入注解-->
-    <!--<context:annotation-config/>-->
+    <!--引入注解  表示告诉Spring要用注解的方式进行配置-->
+<!--    <context:annotation-config/>-->
 
-    <!--扫描包，注入bean -->
+    <!--bean的注入  注入对象行为的注解-->
     <!--其作用是告诉Spring，bean都放在com.how2java.pojo这个包下-->
-    <!--<context:component-scan base-package="com.how2java"/>-->
+<!--    <context:component-scan base-package="com.how2java"/>-->
 
     <!--单个bean的注入-->
     <!--通过关键字c即可获取Category对象，该对象获取的时候，即被注入了字符串"lys"到name属性中 -->
-    <!--<bean name="c" class="com.how2java.pojo.Category">-->
-        <!--<property name="name" value="lys" />-->
-    <!--</bean>-->
+<!--    <bean name="c" class="com.how2java.pojo.Category">-->
+<!--        <property name="name" value="666" />-->
+<!--    </bean>-->
 
-    <!--<bean name="product" class="com.how2java.pojo.Product">-->
-        <!--<property name="id" value="654" />-->
-    <!--</bean>-->
+<!--    <bean name="product" class="com.how2java.pojo.Product">-->
+<!--        <property name="id" value="2222" />-->
+<!--        <property name="name" value="鲁耀升" />-->
+<!--        &lt;!&ndash;使用ref来注入对象&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="category" ref="c" />&ndash;&gt;-->
+<!--    </bean>-->
 
     <!--<bean name="p" class="com.how2java.pojo.Product">-->
         <!--<property name="name" value="product1" />-->
